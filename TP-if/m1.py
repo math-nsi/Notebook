@@ -5,18 +5,10 @@ def affrep(vbool):
     else:
         print('\x1b[5;31;48m' + 'Incorrect !' + '\x1b[0m')
 
-# Fonction qui valide le TP3
+      
+        
+# Fonction qui valide le TP01-if
 def c1(f):
-    test=True
-    for i in range(100):
-        for j in range(100):
-            if f(i,j)!=i-j:
-                test=False
-    affrep(test)
-        
-        
-# Fonction qui valide le TP4
-def c2(f):
     test=True
     for i in range(100):
         for j in range(100):
@@ -24,16 +16,16 @@ def c2(f):
                 test=False
     affrep(test)
     
-# Fonction qui valide le TP5
-def c3(f):
+# Fonction qui valide le TP02-if
+def c2(f):
     test=True
     for i in range(1,10):
         if f(i) or f(-i)==False:
             test=False
     affrep(test)
     
-# Fonction qui valide le TP6
-def c4(f):
+# Fonction qui valide le TP03-if
+def c3(f):
     test=True
     for i in range(50,110):
         if i<80:
@@ -44,8 +36,8 @@ def c4(f):
             test=False
     affrep(test)
     
-# Fonction qui valide le TP7
-def c5(f):
+# Fonction qui valide le TP04-if
+def c4(f):
     test=True
     for i in range(1,30):
         if 11*i<60:
@@ -56,8 +48,8 @@ def c5(f):
             test=False
     affrep(test)
     
-# Fonction qui valide le TP8
-def c6(f):
+# Fonction qui valide le TP05-if
+def c5(f):
     test=True
     for i in range(40,100):
         if i<70:
@@ -68,8 +60,8 @@ def c6(f):
             test=False
     affrep(test)
     
-# Fonction qui valide le TP9
-def c7(f):
+# Fonction qui valide le TP06-if
+def c6(f):
     test=True
     for i in range(1500,1700):
         if i<1600:
@@ -80,8 +72,8 @@ def c7(f):
             test=False
     affrep(test)
     
-# Fonction qui valide le TP10
-def c8(f):
+# Fonction qui valide le TP07-if
+def c7(f):
     if [f(1200),f(1500),f(1800),f(2000)]==[108.0,135.0,198.0,220.0]:
         test=True
     else:
