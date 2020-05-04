@@ -31,7 +31,7 @@ def c3(f):
         test=False
     affrep(test)
     
-# Fonction qui valide le TP03-for
+# Fonction qui valide le TP04-for
 def c4(f):
     liste=[3**i for i in range(0,10)]
     if f()==liste:
@@ -39,3 +39,19 @@ def c4(f):
     else:
         test=False
     affrep(test)
+    
+# Fonction qui valide le TP05-for
+def c5(f):
+    if f()==26917.37:
+        test=True
+    else:
+        test=False
+    affrep(test)
+    
+# Fonction qui valide le TP06-for
+def c6(f):
+    if f()==28656.28:
+        test=True
+    else:
+        test=False
+    affrep(test)  
