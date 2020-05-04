@@ -7,51 +7,35 @@ def affrep(vbool):
         
 # Fonction qui valide le TP01-for
 def c1(f):
-    if f()==483.93:
-        test=True
-    else:
-        test=False
+    test=True
+    liste1=[round(400*1.016**i,2) for i in range(1,15)]
+    liste2=[f(i) for i in range(2020,2034)]
+    test=(liste1==liste2)
     affrep(test)
     
 # Fonction qui valide le TP02-for
 def c2(f):
-    if f()==1230:
-        test=True
-    else:
-        test=False
-    affrep(test)
-    
+    test=(f()==1230)
+    affrep(test) 
         
 # Fonction qui valide le TP03-for
 def c3(f):
-    liste=[13*i for i in range(0,15)]
-    if f()==liste:
-        test=True
-    else:
-        test=False
+    liste=[13*i for i in range(0,20)]
+    test=(liste==f(20))
     affrep(test)
     
 # Fonction qui valide le TP04-for
 def c4(f):
     liste=[3**i for i in range(0,10)]
-    if f()==liste:
-        test=True
-    else:
-        test=False
+    test=(liste==f())
     affrep(test)
     
 # Fonction qui valide le TP05-for
 def c5(f):
-    if f()==26917.37:
-        test=True
-    else:
-        test=False
+    test=(f()==26917.37)
     affrep(test)
     
 # Fonction qui valide le TP06-for
 def c6(f):
-    if f()==28656.28:
-        test=True
-    else:
-        test=False
+    test=(f()==28656.28)
     affrep(test)  
